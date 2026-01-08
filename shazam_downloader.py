@@ -97,7 +97,7 @@ def handle_shazam_detection():
     os.system(f'''termux-notification --id 200 \
         --title "Song Detected 🎵" \
         --content "{song} - {artist}" \
-        --button1 "Download" --button1-action "python download_song.py '{song}' '{artist}'" \
+        --button1 "Download" --button1-action "python shazam_downloader.py '{song}' '{artist}'" \
         --button2 "Ignore" --button2-action "exit" \
         --color "#00FF00" --bg-color "#000000"''')
 
